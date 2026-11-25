@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dealer Dashboard | Estora Realty</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <a href="/" class="logo">estora<span>.</span></a>
+        <div class="nav-links">
+            <a href="/">Home</a>
+            <a href="/properties">Properties</a>
+            <a href="/dealer-profile">My Profile</a>
+            <a href="/saved-properties">Saved</a>
+        </div>
+        <a href="/contact" class="nav-btn">Support</a>
+    </nav>
+</header>
+
+<section class="page-banner">
+    <p class="small-heading">DEALER PANEL</p>
+    <h1>Welcome Back, Ahmed</h1>
+    <p>Manage your property listings in one place.</p>
+</section>
+
+<section class="section">
+    <div class="dashboard-grid">
+        <div class="dashboard-card">
+            <h2>12</h2>
+            <p>Total Properties</p>
+        </div>
+
+        <div class="dashboard-card">
+            <h2>08</h2>
+            <p>Active Listings</p>
+        </div>
+
+        <div class="dashboard-card">
+            <h2>24</h2>
+            <p>Customer Inquiries</p>
+        </div>
+    </div>
+
+    <div class="dashboard-actions">
+        <h2>Manage Your Account</h2>
+        <a href="/properties" class="main-btn">View Properties</a>
+        <a href="/dealer-profile" class="main-btn">View Profile</a>
+        <a href="/contact" class="main-btn">Contact Support</a>
+    </div>
+</section>
+
+<footer>
+    <h2>estora<span>.</span></h2>
+    <p>© 2026 Estora Realty. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

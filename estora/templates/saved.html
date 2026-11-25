@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saved Properties | Estora Realty</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <a href="/" class="logo">estora<span>.</span></a>
+        <div class="nav-links">
+            <a href="/">Home</a>
+            <a href="/properties">Properties</a>
+            <a href="/about">About</a>
+            <a href="/services">Services</a>
+            <a href="/contact">Contact</a>
+        </div>
+        <a href="/dealer-profile" class="nav-btn">Find an Agent</a>
+    </nav>
+</header>
+
+<section class="page-banner">
+    <p class="small-heading">YOUR COLLECTION</p>
+    <h1>Saved Properties</h1>
+    <p>Keep your favourite properties in one place.</p>
+</section>
+
+<section class="section">
+    <div class="property-grid">
+        <div class="property-card">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=700" alt="Saved house">
+            <div class="card-content">
+                <p class="location">Mirpur, AJK</p>
+                <h3>Modern Family House</h3>
+                <p>5 Bedrooms · 4 Bathrooms</p>
+                <h3>PKR 2.5 Crore</h3>
+                <a href="/property-details" class="card-link">View Details →</a>
+            </div>
+        </div>
+
+        <div class="property-card">
+            <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=700" alt="Saved villa">
+            <div class="card-content">
+                <p class="location">Islamabad, Pakistan</p>
+                <h3>Luxury Villa</h3>
+                <p>4 Bedrooms · 3 Bathrooms</p>
+                <h3>PKR 3.8 Crore</h3>
+                <a href="/property-details" class="card-link">View Details →</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <h2>estora<span>.</span></h2>
+    <p>© 2026 Estora Realty. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

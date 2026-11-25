@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dealer Profile | Estora Realty</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <a href="/" class="logo">estora<span>.</span></a>
+        <div class="nav-links">
+            <a href="/">Home</a>
+            <a href="/properties">Properties</a>
+            <a href="/about">About</a>
+            <a href="/services">Services</a>
+            <a href="/contact">Contact</a>
+        </div>
+        <a href="/dealer-dashboard" class="nav-btn">Dashboard</a>
+    </nav>
+</header>
+
+<section class="page-banner">
+    <p class="small-heading">MEET OUR AGENTS</p>
+    <h1>Dealer Profile</h1>
+</section>
+
+<section class="section profile-section">
+    <div class="profile-card">
+        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400" alt="Dealer profile">
+        <h2>Ahmed Khan</h2>
+        <p>Real Estate Agent</p>
+        <p>Mirpur, Azad Kashmir</p>
+        <p>5 Years of Experience</p>
+        <a href="/contact" class="main-btn">Contact Dealer</a>
+    </div>
+
+    <div class="profile-details">
+        <h2>About the Dealer</h2>
+        <p>Ahmed Khan is a property consultant who helps clients explore residential and commercial properties.</p>
+
+        <h3>Specialization</h3>
+        <ul>
+            <li>Residential Properties</li>
+            <li>Commercial Properties</li>
+            <li>Property Buying and Selling</li>
+            <li>Rental Properties</li>
+        </ul>
+
+        <a href="/properties" class="card-link">Explore Properties →</a>
+    </div>
+</section>
+
+<footer>
+    <h2>estora<span>.</span></h2>
+    <p>© 2026 Estora Realty. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

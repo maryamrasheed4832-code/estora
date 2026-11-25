@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estora Realty | Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <a href="/" class="logo">estora<span>.</span></a>
+
+        <div class="nav-links">
+            <a href="/">Home</a>
+            <a href="/properties">Properties</a>
+            <a href="/about">About</a>
+            <a href="/services">Services</a>
+            <a href="/contact">Contact</a>
+        </div>
+
+        <a href="/dealer-profile" class="nav-btn">Find an Agent</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <p class="small-heading">FIND YOUR PLACE IN THE WORLD</p>
+        <h1>Find Your <span>Perfect</span> Space.</h1>
+        <p>Discover beautiful properties and find a place you will love to call home.</p>
+
+        <form action="/properties" method="GET" class="search-box">
+            <input type="text" name="location" placeholder="Enter location">
+            <select name="type">
+                <option value="">Property Type</option>
+                <option>House</option>
+                <option>Apartment</option>
+                <option>Commercial</option>
+            </select>
+            <button type="submit">Search Property</button>
+        </form>
+    </div>
+
+    <div class="hero-image">
+        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1000" alt="Modern house">
+    </div>
+</section>
+
+<section class="section">
+    <div class="section-heading">
+        <p class="small-heading">OUR COLLECTION</p>
+        <h2>Featured Properties</h2>
+        <p>Explore some of our most beautiful properties.</p>
+    </div>
+
+    <div class="property-grid">
+        <div class="property-card">
+            <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=700" alt="Family house">
+            <div class="card-content">
+                <p class="location">Mirpur, AJK</p>
+                <h3>Contemporary Family Home</h3>
+                <p>5 Bedrooms · 4 Bathrooms</p>
+                <a href="/property-details" class="card-link">View Details →</a>
+            </div>
+        </div>
+
+        <div class="property-card">
+            <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=700" alt="Luxury house">
+            <div class="card-content">
+                <p class="location">Islamabad, Pakistan</p>
+                <h3>Build Your Dream Address</h3>
+                <p>4 Bedrooms · 3 Bathrooms</p>
+                <a href="/property-details" class="card-link">View Details →</a>
+            </div>
+        </div>
+
+        <div class="property-card">
+            <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=700" alt="Modern apartment">
+            <div class="card-content">
+                <p class="location">Dadyal, AJK</p>
+                <h3>Light-Filled City Apartment</h3>
+                <p>3 Bedrooms · 2 Bathrooms</p>
+                <a href="/property-details" class="card-link">View Details →</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="center">
+        <a href="/properties" class="main-btn">Explore All Properties</a>
+    </div>
+</section>
+
+<section class="cta">
+    <p class="small-heading">LET'S WORK TOGETHER</p>
+    <h2>Ready to Find Your Dream Property?</h2>
+    <p>Our team is here to help you find the right place.</p>
+    <a href="/contact" class="main-btn">Contact Us</a>
+</section>
+
+<footer>
+    <h2>estora<span>.</span></h2>
+    <p>Making your property journey simple and comfortable.</p>
+    <p>© 2026 Estora Realty. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
